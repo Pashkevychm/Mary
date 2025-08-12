@@ -1,127 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
+
 body {
     font-family: sans-serif;
-    background-color: black;
+    font-size: 18px;
+    color: white;
+    margin: 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.flex-cont {
+    
+    display: flex;
+    gap: 50px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-v {
+    flex-direction: column;
+}
+
+.center-cont {
+    padding: 30px 20%;
+}
+
+.btn-primary {
+    color: black;
+    text-decoration: none;
+    background-color: #B32B2B;
+    padding: 15px 30px;
+    box-shadow: 5px -7px 0px 0px #7d1e1e;
+}
+.btn-primary:hover{
+box-shadow: -2px 3px 1px 0px #7d1e1e;
+bottom:10px;
+}
+
+.btn-secondary {
+    color: black;
+    text-decoration: none;
+    background-color: #543636;
+    padding: 15px 30px;
+    box-shadow: 5px -7px 0px 0px #412727;
+}
+
+.btn-secondary:hover{
+box-shadow: -2px 3px 1px 0px #412727;
+bottom:10px;
+}
+
+.add-border {
+    border: 10px solid white;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 15px;
-    margin-bottom: 20px;
-}
-
-.button {
-    background-color: #36bbce;
-    color: black;
-    text-decoration: none;
-    padding: 15px;
-    font-size: 24px;
-    border-radius: 10px;
-    display: block;
-}
-
-nav {
-    border-top: 5px solid white;
-    border-bottom: 5px solid white;
-    padding: 25px 100px 25px 95px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-link {
-    font-size: 24px;
-    color: white;
-    text-decoration: none;
-    display: block;
+    height: 168px;
+    background-image: url("https://learn.logikaschool.com/uploads/student/4711440/68920d40b4f90.png");
+    background-size: cover;
 }
 
 h1 {
-    text-align: center;
+    font-size: 90px;
+    font-family: "Qwigley", cursive;
+    font-weight: 500;
+}
+
+nav a {
+    background-image: linear-gradient(rgb(11, 11, 11), rgb(66, 66, 66));
+    text-decoration: none;
     color: white;
-    font-size: 36px;
-    margin-top: 45px;
-    margin-bottom: 40px;
+    background-color: #2A2A2A;
+    padding: 10px 20px;
+    border-radius: 15px;
 }
 
-.post-text {
-    font-size: 24px;
+main {
+    background-color: #2A2A2A;
 }
 
-.info {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1100px;
+#intro {
+    background-color: #414141;
+}
+
+#intro h2 {
+    font-size: 50px;
+    font-family: "Qwigley", cursive;
+    font-weight: 500;
+}
+
+#menu img {
+    width: 300px;
+    height: 300px;
+}
+
+#reviews div {
+    width: max-content;
     margin: 0 auto;
 }
 
-.post {
-    background-color: white;
-    padding: 15px 45px 30px 45px;
-    width: 400px;
-    margin: 20px;
-    position: relative;
+#reviews img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
 
-.article-but {
-    text-decoration: none;
-    background-color: #133aac;
-    color: white;
-    font-size: 24px;
+#about div {
+    background-image: url("https://learn.logikaschool.com/uploads/student/4711440/68989e799b916.png");
+    background-size: cover;
+}
+
+#map {
     text-align: center;
-    padding: 10px 75px 10px 75px;
-    display: block;
-}
-
-.full-image {
-    margin: 100px 0px 100px 0px;
-}
-
-.social {
-    display: block;
-    width: 30px;
 }
 
 footer {
-    background-color: white;
+    background-image: url("https://learn.logikaschool.com/uploads/student/4711440/68989f8d44ebb.png");
+    background-size: cover;
+    padding: 10px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
-    padding: 30px 30px 20px 45px;
 }
 
-.footer-text {
-    font-size: 24px;
-    margin-right: 30px;
+footer img {
+    width: 150px;
+    height: 150px;
 }
 
-.footer-text span {
-    color: #850AE5;
-    font-weight: bolder;
+.icon {
+    width: 50px;
+    height: 50px;
 }
-.promocod{
-    position:fixed;
-    top:50%;
-    color:#850AE5;
-    left: 10px;
-    width: 8%;
-    padding:1%;
-    height: 32%;
-    border: 2px dotted red;
-    background-color: rgb(13, 222, 65);
-    opacity: 0.7;
-}
-.post1{
-    background-color: white;
-    padding: 15px 45px 30px 45px;
-    width: 400px;
-    margin: 20px;
-    position: relative;;
-    top:50%;
-    color:#850AE5;
-    left: 10px;
-    height: 32%;
-    border: 2px dotted red;
-    opacity: 0.7;
 
+.footer {
+background-color: #2A2A2A;
+}
+.menu:hover{
+    transform: translateX(200px) scale(1.5);
+    transition: 3s ease-in;
+}
+.menudotted{
+ text-decoration: none;
+ margin-left: 45%;
+ margin-bottom: 2%;
 }
